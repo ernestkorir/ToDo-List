@@ -36,7 +36,37 @@ eval("\n\nmodule.exports = function (i) {\n  return i[1];\n};\n\n//# sourceURL=w
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _modules_list__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/list */ \"./src/modules/list.js\");\n\n\nwindow.onload = function () {\n  (0,_modules_list__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n};\n\n//# sourceURL=webpack://todo-list/./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/modules/displayList.js":
+/*!************************************!*\
+  !*** ./src/modules/displayList.js ***!
+  \************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__),\n/* harmony export */   \"listSection\": () => (/* binding */ listSection)\n/* harmony export */ });\n/* harmony import */ var _listData__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./listData */ \"./src/modules/listData.js\");\n\nvar listSection = document.querySelector('.list-section');\nvar listContainer = document.createElement('ul');\nlistContainer.className = 'allToDos';\nlistSection.appendChild(listContainer);\nvar createToDo = function createToDo() {\n  if (_listData__WEBPACK_IMPORTED_MODULE_0__[\"default\"].length !== 0) {\n    listSection.style.display = 'block';\n    _listData__WEBPACK_IMPORTED_MODULE_0__[\"default\"].map(function (a) {\n      var list = document.createElement('li');\n      list.className = 'todo';\n      list.innerHTML = \"\\n          <div><input type=\\\"checkbox\\\" id=\\\"checkbox\\\">\\n          <p>\".concat(a.description, \"</p></div>\\n          <i class=\\\"fa fa-ellipsis-v\\\" aria-hidden=\\\"true\\\"></i>\\n          \");\n      listContainer.append(list);\n      return list;\n    });\n  }\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createToDo);\n\n//# sourceURL=webpack://todo-list/./src/modules/displayList.js?");
+
+/***/ }),
+
+/***/ "./src/modules/list.js":
+/*!*****************************!*\
+  !*** ./src/modules/list.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _displayList__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./displayList */ \"./src/modules/displayList.js\");\n\nvar inject = function inject() {\n  (0,_displayList__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n};\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (inject);\n\n//# sourceURL=webpack://todo-list/./src/modules/list.js?");
+
+/***/ }),
+
+/***/ "./src/modules/listData.js":
+/*!*********************************!*\
+  !*** ./src/modules/listData.js ***!
+  \*********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nvar Todo = [{\n  index: 1,\n  description: \"Prayer session\",\n  completed: true\n}, {\n  index: 2,\n  description: \"Attend morning session\",\n  completed: true\n}, {\n  index: 3,\n  description: \"Meet Coding partners\",\n  completed: true\n}];\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Todo);\n\n//# sourceURL=webpack://todo-list/./src/modules/listData.js?");
 
 /***/ }),
 
