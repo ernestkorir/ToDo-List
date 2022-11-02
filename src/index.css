@@ -1,108 +1,102 @@
 body {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    background-color: #f1f0f0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  background-color: #f1f0f0;
 }
 
 main {
-    width: 80%;
-    margin: 50px;
+  width: 80%;
+  margin: 50px;
 }
 
 .to-do-list {
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    background-color: #fff;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
 }
 
 .add-to-do i {
-    transform: rotate(0.5turn);
-    color: #cccccc;
+  transform: rotate(0.5turn);
+  color: #ccc;
+}
+
+.todo i {
+  color: rgb(207, 199, 199);
 }
 
 #title i {
-    display: flex;
-    flex-direction: column;
-    color: rgb(207, 199, 199);
+  display: flex;
+  flex-direction: column;
+  color: rgb(207, 199, 199);
 }
 
 #title h3 {
-    margin: 0;
+  margin: 0;
 }
 
-.to-do-list>* {
-    display: flex;
-    border-bottom: 1px solid rgb(248, 247, 247);
-    flex: 1;
-    padding: 1rem;
+.to-do-list > * {
+  display: flex;
+  border-bottom: 1px solid rgb(248, 247, 247);
+  flex: 1;
+  padding: 1rem;
 }
 
 #title,
 .add-to-do {
-    justify-content: space-between;
-    align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .add-to-do input {
-    border: 1px hidden;
-    flex-basis: 90%;
-    font-size: 1rem;
-    color: #000;
+  border: 1px hidden;
+  flex-basis: 90%;
+  font-size: 1rem;
+  color: #000;
 }
 
-.add-to-do i {
-    transform: rotate(0.5turn);
-    color: rgb(207, 199, 199);
-  }
-
 .add-to-do input[placeholder] {
-    font-style: italic;
+  font-style: italic;
 }
 
 .clear-completed {
-    background-color: rgb(207, 199, 199);
-    justify-content: center;
+  background-color: rgb(207, 199, 199);
+  justify-content: center;
 }
 
 #clear {
-    border: 1px hidden;
-    background-color: rgb(207, 199, 199);
-    text-align: center;
-    font-size: 1rem;
+  border: 1px hidden;
+  background-color: rgb(207, 199, 199);
+  text-align: center;
+  font-size: 1rem;
 }
 
 .list-section {
-    display: none;
-    padding: 0;
+  display: none;
+  padding: 0;
 }
 
-
 .todo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 1px solid rgb(248, 247, 247);
-    flex: 1;
-    padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgb(248, 247, 247);
+  flex: 1;
+  padding: 1rem;
 }
 
 .todo div {
-    flex-basis: 90%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.5rem;
+  flex-basis: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .todo p {
-    flex-basis: 95%;
-    margin: 0;
-    color: #000;
-    font-size: 1.2rem;
-}
-
-.todo i {
-    color: rgb(207, 199, 199);
+  flex-basis: 95%;
+  margin: 0;
+  color: #000;
+  font-size: 1.2rem;
 }
