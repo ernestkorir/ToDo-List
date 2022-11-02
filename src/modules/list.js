@@ -1,7 +1,7 @@
-import createToDo from "./displayList";
+import createToDo from './displayList.js';
 
-const inject = () =>{
-    createToDo();
-}
+const inject = () => {
+  createToDo();
+};
 
 export default inject;

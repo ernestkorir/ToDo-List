@@ -1,7 +1,7 @@
-import './index.css'
+import './index.css';
 
-import inject from './modules/list'
+import inject from './modules/list.js';
 
-window.onload= () => {
-    inject();
-}
+window.onload = () => {
+  inject();
+};
