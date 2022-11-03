@@ -1,7 +1,8 @@
 import './index.css';
 
-import inject from './modules/list.js';
+import inject from './modules/inject.js';
+import { getAddedTodos, form } from './modules/newtodo.js';
 
-window.onload = () => {
-  inject();
-};
+inject();
+
+form.addEventListener('submit', getAddedTodos);
