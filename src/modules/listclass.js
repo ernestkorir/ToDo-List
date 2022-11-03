@@ -12,9 +12,9 @@ export default class TodoList {
     }
 
     saveTodo() {
-        const todos = JSON.stringify(this.allTodos);
-        localStorage.setItem('todos', todos);
-      }
+      const todos = JSON.stringify(this.allTodos);
+      localStorage.setItem('todos', todos);
+    }
 
     deleteTodo(indx) {
       this.allTodos.splice(indx - 1, 1);
