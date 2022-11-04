@@ -36,7 +36,7 @@ main {
   margin: 0;
 }
 
-.to-do-list>* {
+.to-do-list > * {
   display: flex;
   border-bottom: 1px solid rgb(248, 247, 247);
   flex: 1;

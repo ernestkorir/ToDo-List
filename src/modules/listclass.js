@@ -34,6 +34,7 @@ export default class TodoList {
       this.allTodos[index - 1].description = newValue;
       this.saveTodo();
     }
+
     completedTodo(status, index) {
       this.allTodos[index - 1].completed = status;
       this.saveTodo();
