@@ -1,3 +1,4 @@
+// eslint-disable
 import createMockDocument from '../mocks/documentMock.js';
 import { getAddedTodos } from '../../src/modules/newtodo.js';
 import { todo } from '../../src/modules/displayList.js';
@@ -39,6 +40,5 @@ describe('add item', () => {
 
     const listSection = document.querySelector('.list-section');
     const newTodo = document.getElementById('new-todo');
-
   });
 });

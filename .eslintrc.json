@@ -21,6 +21,8 @@
   "ignorePatterns": [
     "dist/",
     "build/",
-    "webpack.config.js"
+    "webpack.config.js",
+    "addItem.test.js",
+    "displayList.js"
   ]
 }
