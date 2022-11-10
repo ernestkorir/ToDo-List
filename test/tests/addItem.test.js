@@ -40,5 +40,15 @@ describe('add item', () => {
 
     const listSection = document.querySelector('.list-section');
     const newTodo = document.getElementById('new-todo');
+
+    getAddedTodos();
+    addInputDescription('description-4', newTodo);
+    getAddedTodos();
+    addInputDescription('description-5', newTodo);
+    getAddedTodos();
+    expect(listSection.children[0].children.length).toEqual(
+      3,
+    );
+
   });
 });
