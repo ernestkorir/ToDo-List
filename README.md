@@ -2,8 +2,7 @@
 
 # To-Do list
 
->A ToDo list using ES6 and webpack
-
+> A ToDo list using ES6 and webpack
 
 ## Built With
 
@@ -14,18 +13,19 @@
 
 ## Live Demo (if available)
 
-[Live Demo Link](https://livedemo.com)
-
+[Live Demo Link](https://ernestkorir.github.io/ToDo-List/dist/)
 
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
- A web browser
-### Setup
-Clone the repository [get the link here](https://github.com/ernestkorir/ToDo-List)
 
+A web browser
+
+### Setup
+
+Clone the repository [get the link here](https://github.com/ernestkorir/ToDo-List)
 
 ## Authors
 
