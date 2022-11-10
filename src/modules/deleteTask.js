@@ -6,5 +6,4 @@ const deleteTask = (index) => {
   createTodo();
 };
 
-
 export default deleteTask;

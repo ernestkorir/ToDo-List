@@ -11,9 +11,9 @@ form.addEventListener('submit', getAddedTodos);
 clearCompleted();
 
 document.addEventListener('click', (e) => {
-    if (e.target.className === 'fa fa-times') {
-      deleteTask(e.target.id);
-    }
-  });
-  
-  clearCompletedButton.addEventListener('click', clearCompleted);
+  if (e.target.className === 'fa fa-times') {
+    deleteTask(e.target.id);
+  }
+});
+
+clearCompletedButton.addEventListener('click', clearCompleted);
