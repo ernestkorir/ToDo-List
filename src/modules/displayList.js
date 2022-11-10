@@ -44,12 +44,18 @@ const createTodo = () => {
         descrpt.contentEditable = 'true';
         list.appendChild(deleteIcon);
         dragIcon.style.display = 'none';
-        descrpt.addEventListener('keydown', () => {
-          todo.editTodo(descrpt.innerHTML, a.index);
-        });
       };
       listContainer.append(list);
       return list;
+    });
+    document.createElement('p').addEventListener('keyup', (e) => {
+      if (e.target.id === 'task-description') {
+        if (e.key === 'Enter') {
+          createTodo();
+        } else {
+          todo.editTodo(e.target, a.index);
+        }
+      }
     });
     listSection.appendChild(listContainer);
   }
